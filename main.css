@@ -1,0 +1,616 @@
+/* @import url("animate.css"); */
+/*FONTS*/
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-extralightitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-extralightitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-extralightitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-extralightitalic-webfont.svg#fonts/omnes_girlscoutsXLtIt') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-blackitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-blackitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-blackitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-blackitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-blackitalic-webfont.svg#fonts/omnes_girlscoutsblack_italic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-black-webfont.eot');
+  src: url('fonts/omnes_girlscouts-black-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-black-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-black-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-black-webfont.svg#fonts/omnes_girlscoutsblack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-extralight-webfont.eot');
+  src: url('fonts/omnes_girlscouts-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-extralight-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-extralight-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-extralight-webfont.svg#fonts/omnes_girlscoutsextralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-bolditalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-bolditalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-bolditalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-bolditalic-webfont.svg#fonts/omnes_girlscoutsbold_italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-bold-webfont.eot');
+  src: url('fonts/omnes_girlscouts-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-bold-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-bold-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-bold-webfont.svg#fonts/omnes_girlscoutsbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-lightitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-lightitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-lightitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-lightitalic-webfont.svg#fonts/omnes_girlscoutslight_italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-hairlineitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-hairlineitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-hairlineitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-hairlineitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-hairlineitalic-webfont.svg#fonts/omnes_girlscoutshairlineIt') format('svg');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-medium-webfont.eot');
+  src: url('fonts/omnes_girlscouts-medium-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-medium-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-medium-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-medium-webfont.svg#fonts/omnes_girlscoutsmedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-light-webfont.eot');
+  src: url('fonts/omnes_girlscouts-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-light-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-light-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-light-webfont.svg#fonts/omnes_girlscoutslight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-hairline-webfont.eot');
+  src: url('fonts/omnes_girlscouts-hairline-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-hairline-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-hairline-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-hairline-webfont.svg#fonts/omnes_girlscoutshairline') format('svg');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-regular-webfont.eot');
+  src: url('fonts/omnes_girlscouts-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-regular-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-regular-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-regular-webfont.svg#fonts/omnes_girlscouts_regularRg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-mediumitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-mediumitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-mediumitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-mediumitalic-webfont.svg#fonts/omnes_girlscoutsmedium_italic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-regularitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-regularitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-regularitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-regularitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-regularitalic-webfont.svg#fonts/omnes_girlscoutsRgIt') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-thinitalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-thinitalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-thinitalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-thinitalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-thinitalic-webfont.svg#fonts/omnes_girlscoutsthin_italic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-thin-webfont.eot');
+  src: url('fonts/omnes_girlscouts-thin-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-thin-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-thin-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-thin-webfont.svg#fonts/omnes_girlscoutsthin') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-semibolditalic-webfont.eot');
+  src: url('fonts/omnes_girlscouts-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-semibolditalic-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-semibolditalic-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-semibolditalic-webfont.svg#fonts/omnes_girlscoutsSBdIt') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'girlscouts';
+  src: url('fonts/omnes_girlscouts-semibold-webfont.eot');
+  src: url('fonts/omnes_girlscouts-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/omnes_girlscouts-semibold-webfont.woff') format('woff'), url('fonts/omnes_girlscouts-semibold-webfont.ttf') format('truetype'), url('fonts/omnes_girlscouts-semibold-webfont.svg#fonts/omnes_girlscoutssemibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+/* Animation */
+@keyframes swing {
+    0% { transform: rotate(1.5deg); }
+    100% { transform: rotate(-1.5deg); }
+}
+
+@keyframes reverse-swing {
+    0% { transform: rotate(-1.5deg); }
+    100% { transform: rotate(1.5deg); }
+}
+
+/*Page Properties*/
+body {
+	height: 100%;
+    background: url('/2018/images/bg.png') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: girlscouts;
+    margin: 0;
+    overflow-x: hidden;
+    align-content: center;
+}
+
+ul {
+	list-style: none;
+}
+
+a { 
+	display: block;
+}
+
+/* Sections - Used to pinpoint sections of page when ediitng or maintaining this file*/
+/*#site-header {
+	border: red 5px solid;
+}
+#site-content {
+	border: green 5px solid;
+	
+}
+#promo-content {
+	border: purple 5px solid;	
+}
+
+
+/* End of sections */
+
+/* Background */
+#grass {
+	background: url('/2018/images/green-patch.png') no-repeat; 
+	background-size: 100%;
+	width: 100%;
+	height: 220px;
+	z-index: -1;
+}
+
+#wrapper { 
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+#dog-container {
+	position: absolute;
+    top: 1314px;
+    right: 87px;
+    z-index: 1;
+}
+
+
+#dog-center {
+	background: url('/2018/images/dog.png') no-repeat; 	
+	background-position: center;
+	z-index: 1;
+	
+}
+
+
+/*Top Page */
+#logo {
+	padding 5px;
+	background-position: center;
+	width: 300px;
+	margin: 10px auto;	
+}
+
+,greeting-container {
+	position: relative;
+	
+}
+
+#greet-left-star {
+	position: absolute;
+	top: 5px;
+}
+
+#greet-right-star {
+	position: absolute;
+	top: 5px;
+	left: 87%;
+}
+
+#greeting {
+	text-transform: uppercase;
+	background-color: #fff;
+	color: #EB1BC3;
+	font-size: 30px;
+	font-family: girlscouts;
+	font-weight: bold;
+	text-align: center;
+	line-height: .6in;
+	padding: 5px;
+	border-radius: 30px;
+	margin: 0 auto;	
+	z-index: 1;
+}
+
+
+#topright-container {
+	position: relative;
+	background-image: url("/2018/images/star.png");
+	width: 100%;
+}
+
+.topright-star {
+	position: absolute;
+	left: 75%;
+	top: -413px;
+	z-index: -1;
+ }
+
+
+/* CONTENT IN MIDDLE OF PAGE */
+
+.star-grid {
+	min-width: 1024px;
+	height: 732px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+
+/* Star properties */
+
+.swing {
+    animation: swing ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+
+}
+
+.reverseswing {
+    animation: reverse-swing ease-in-out 2s infinite alternate;
+    transform-origin: center -20px;
+
+}
+
+.string-1 {
+	position: absolute;
+	border-right: rgba(75,0,130, 0.2) 1px dashed;
+	height: 313px;
+	left:159px;
+	top: -197px;
+	z-index: -1;
+}
+
+.troop_activity-1 {
+	position: absolute;
+	top: 117px;	
+}
+
+.string-2 {
+	position: absolute;
+	border-right: rgba(75,0,130, 0.2) 1px dashed;
+	height: 542px;
+	left: 409px;
+	top: -159px;
+	z-index: -1;
+}
+
+.goal_poster-2{
+	position: absolute;
+	height: 315px;
+	left: 24%;
+	top: 383px;
+}
+
+.string-3 {
+	position: absolute;
+	border-right: rgba(75,0,130, 0.2) 1px dashed;
+	height: 322px;
+	left: 640px;
+	top: -159px;
+	z-index: -1;
+}
+
+.theme_ca-3 {
+	position: absolute;
+	left: 47%;
+	top: 157px;
+}
+
+.string-4 {
+	position: absolute;
+	border-right: rgba(75,0,130, 0.2) 1px dashed;
+	height: 603px;
+	left: 866px;
+	top: -156px;
+	z-index: -1;
+}
+
+.safety_tips-4 {
+	position: absolute;
+	left: 69%;
+	top: 445px;
+}
+
+/*Promotion Content properties */
+#promo-content {
+	width: 1024px;
+	background-image: url('/2018/images/starcluster.png');
+	background-repeat: no-repeat;
+	padding-top: 97px;
+	padding-left: 58px;
+	transform:rotate(-10deg);
+	margin-bottom: 2in;
+	margin-left: 15px;
+}
+
+.image-container {
+	top: 65px;
+	width: 1193px;
+
+}
+
+.fill {
+	float: left;
+	width: 30%;
+	height: 283px;
+	background-size: 50%;
+	color: purple;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: girlscouts;
+}
+
+.fill li {
+	padding: 5px;
+}
+
+.fill img {
+	border: 5px #55aecc solid;
+}
+
+#promo-text {
+	font-family: girlscouts;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: .5in;
+	color: #fff;
+}
+
+/* Footer Content */
+
+#footerBG {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+#footerBG #footer {
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #00953B;
+  border-top: 3px solid #848585;
+}
+#footerBG #footer img {
+  margin-left: 20px;
+}
+#footerBG #footer .left {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}
+#footerBG #footer .right {
+  float: right;
+  margin-right: 10%;
+}
+.right {
+    float: right;
+    margin-right: 2%;
+    margin-bottom: -135px;
+}
+#footerBG #otter {
+  float: right;
+  margin-top: -50px;
+  margin-right: 5%;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+#footerBG #otterhome {
+  float: right;
+  margin-top: -50px;
+  margin-right: 10%;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+#footerBG #divein {
+  margin-left: 20%;
+  z-index: 100;
+  top: -50px;
+  position: absolute;
+}
+#footerBG #waves {
+  position: relative;
+  height: 349px;
+/*   background-image: url("img/waves.png"); */
+  background-repeat: repeat-x;
+  z-index: 1;
+  width:100%;
+}
+#footerBG #waves #greens {
+  position: absolute;
+  left: 5%;
+  bottom: 0px;
+}
+#footerBG #waves #fish {
+  position: absolute;
+  right: 10%;
+  bottom: 15%;
+}
+#footerBG #bigwaves {
+  position: relative;
+  height: 578px;
+  background-image: url("img/bigwaves.png");
+  background-repeat: repeat-x;
+  background-position-x: 0;
+}
+#footerBG #bigwaves #greens {
+  position: absolute;
+  left: 5%;
+  bottom: 0px;
+}
+#footerBG #bigwaves #wateroverlay {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 392px;
+}
+#footerBG #bigwaves #fish {
+  position: absolute;
+  right: 3%;
+  bottom: 15%;
+}
+#footerBG #bigwaves #circles {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+}
+#footerBG #bigwaves #orangecircle {
+  background-image: url("img/orangecircle.png");
+  width: 342px;
+  height: 339px;
+  background-size: cover;
+  float: left;
+  border-radius: 50%;
+  padding: 10px;
+}
+#footerBG #bigwaves #imgset {
+  padding-top: 100px;
+  border-radius: 50%;
+  text-align: center;
+  padding-left: 5px;
+  overflow: hidden;
+}
+#footerBG #bigwaves #imgset img:hover {
+  opacity: 1;
+}
+#footerBG #bigwaves #imgset img {
+  margin: 8px;
+  opacity: .7;
+}
+#footerBG #bigwaves #greencircle {
+  background-image: url("img/greencircle.png");
+  width: 342px;
+  height: 339px;
+  background-size: cover;
+  float: right;
+  margin-top: 100px;
+  border-radius: 50%;
+  padding: 10px;
+}
+#footer-wrap .logo {
+	float:right;
+	margin-left:30px;
+}
+#footer-wrap {
+	width:100%;
+	position: fixed;
+	bottom:0;
+	height:40px;
+	background:#00953B;
+	color:#FFF;
+	padding-top:12px;
+	font-family:'Arial';
+	font-size:11px;
+	z-index:900000000000;
+	
+}
+#footer-wrap .wrap {
+	width:940px;
+	margin:auto;
+	position: relative;
+	
+}
+#footer-wrap .text {
+	width:460px;
+	display:block;
+	float:left;
+	text-align:left;
+}
+
+#footer-wrap .logo {
+	float:right;
+	margin-left:30px;
+}
+
+.more{
+	background:url('../images/more_games.png');
+	height: 45px;
+    width: 198px;
+    position: absolute;
+    right: 130px;
+    top: -9px;
+	margin:0px;margin-right:7px;margin-bottom:7px;
+	z-index:100000;
+	cursor:pointer;
+}
+.popup{
+	background:#fff;
+	    width: 195px;
+    height: 0;
+    border-radius: 10px;
+    right: 137px;	top:17px;
+	position:absolute;
+	overflow: hidden;
+}
+.popup ul{
+	width:222px;
+	position: relative;
+	padding: 0;
+	margin: 5px;
+	margin-top: 20px;
+}
+.popup ul li{
+	/* border-bottom:1px solid #888; */
+		list-style: none;
+}
+.popup ul li a{
+	padding:7px;
+	font-size:18px;
+	display:block;
+}
+.popup ul li a:hover{
+	color:#00AE58 !important;
+}
+.popup a{	
+	/*font-family:'Omnes_GirlScouts-Semibold';*/
+	font-family: girlscouts;
+	font-weight: 600;
+	color:#01582f;
+	text-decoration: none;
+	font-size:15px;-webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.popup a:hover{color:#fff;}
+
+											/*=============Media Queries============= */
+
+/* Range: up to 1023px */
+
+@media screen and (max-width: 1023px) {
+	body.home{
+		overflow-x: scroll;
+	}
+}
