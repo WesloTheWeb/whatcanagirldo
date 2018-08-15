@@ -1,0 +1,146 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/2018/style.2018.css" />
+		<title>Ashdon Farms | What Can A Girl Do</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+	</head>
+	<body>
+		<div id="wrapper">
+										<!-------------- HEADER  -------------->
+				<section id="site-header">
+				<div id="logo">  <img src="/images/lgoos.png" alt="Ashdon Farm and Girl Scouts Logo" align="middle"> </div>						
+				<div id="topright-container"> 
+		 			<div class="topright-star"> <img src="/2018/images/star.png"> </div>
+				</div>				   
+				<div class="greeting-container"> 
+					<div id="greet-left-star"> <img src="/2018/images/star_left.png">  </div>
+					<div id="greet-right-star"> <img src="/2018/images/star_right.png"> </div>
+					<div id="greeting"> Explore the Girl Scout Product Program </div>
+				</div>
+				</section>
+				
+										<!-------------- CONTENT  -------------->
+				<section id="site-content">
+				<div class="star-grid">
+
+						<div class="string-1"> </div>
+				 		<div class="troop_activity-1 swing"> <a href="content/blind_product_match_2018.pdf"><img src="/2018/images/item-1.png" alt="Troop Activity"/></a></div>
+					
+						<div class="string-2"> </div>
+						<div class="goal_poster-2 reverseswing"><a href="content/goal_poster_2018.pdf"><img src="/2018/images/item-2.png" alt="Goal Poster" /></a></div>
+					
+						<div class="string-3"> </div>
+						<div class="theme_ca-3 swing"><a href="content/theme_clip_art_2018.zip"><img src="/2018/images/item-3.png" alt="Theme Clip Art"/></a></div>
+					
+						<div class="string-4"> </div>
+						<div class="safety_tips-4 reverseswing"> <a href="content/safety_selling_2018.pdf"><img src="/2018/images/item-4.png" alt="Safety Selling Tips" /></a></div>
+			 	</div>
+				</section>
+			 	
+									   <!-------------- BOTTOM  --------------> 	 			    
+			<section id="promo-content">
+					<div id="promo-text">
+						The girl scout product program<br/> empowers a girl with 5 essential skills </div> 
+					 <div class="image-container">
+						<div class="fill">
+							<img src='/2018/images/girl_shouting.jpg' width="325px">  </div>
+						<div class="fill">
+							<img src='/2018/images/girl-with-dog.jpg' width="325px">  </div>
+						<div class="fill">
+							<ul> 
+								<li> Goal Setting </li>
+								<li> Decision Making </li>
+								<li> Money Management </li>
+								<li> People Skills </li>
+								<li> Business Ethics </li>
+							</ul>
+						</div>
+						<br style="clear:both">
+					</div>  
+			</section>
+								<!-- Begin JavaScript -->
+				<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+				<script>
+				$(document).ready(function(){
+					
+					
+					$('.more').on('click', function(){
+						($(this).hasClass('open')) ? close() : open();
+					});
+					
+				
+					function open(){
+						var count = $(".popup ul li").length;
+						var total = count * 37 + 20;
+						var top = total*-1;
+						$('.popup').animate({
+							height: total,
+							marginTop: top
+							});
+						$('.more').animate({
+							marginTop: top
+						});
+						$('.more').addClass('open');
+						$('.more').removeClass('closed');
+					}
+					
+					
+					function close(){
+						$('.popup').animate({
+							height: 0,
+							marginTop: "0"
+						});
+						$('.more').animate({
+							marginTop: "0"
+						});
+						$('.more').addClass('closed');
+						$('.more').removeClass('open');
+					}
+					
+					});
+				</script>
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		 
+			<script type="text/javascript">
+			 var _gaq = _gaq || [];
+			 _gaq.push(['_setAccount', 'UA-34780068-1']);
+			 _gaq.push(['_trackPageview']);
+			
+			 (function() {
+			   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			 })();
+			</script>
+							<!-- End JavaScript -->
+							
+			<div id="dog-container">
+					<img src="/2018/images/dog.png"> 
+				</div>	   
+		</div>  
+		    <!-------------- FOOTER-------------->
+		<section id="footer">
+		<div id="footerBG">
+			<div id="footer-wrap">
+				<div class="wrap">
+					<div class="text">
+					The GIRLS SCOUTS&copy; name, mark and all associated trademarks and logotypes, are owned by Girl Scouts of the USA. QSP/GAO and Ashdon Farms are official licensed vendors.	</div>
+					<img src="/2013/images/footer-logo-ashdon.png" alt="" class="logo" />
+	 
+					<div class="logo more closed"></div>
+					<div class="popup">
+						<ul>
+							<li><a href="http://www.whatcanagirldo.com/otter-adventure/">Otter Adventure</a></li>
+							<li><a href="http://whatcanagirldo.com/nutfactory/">Nut Factory</a></li>
+							<li><a href="http://whatcanagirldo.com/adventure/">Bee Adventure</a></li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<div id="grass"> 
+		</div>
+		</section>
+ 	</body>
+</html>
